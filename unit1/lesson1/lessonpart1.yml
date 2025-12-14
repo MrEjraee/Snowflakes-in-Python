@@ -1,0 +1,94 @@
+# yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
+id: lessonpart1
+title: Page 1
+content: >
+  ## Introduction
+
+
+  In this lesson, you'll learn how to create a beautiful landscape of snowflakes
+  using Python's Turtle graphics library. As you follow the instructions, you'll
+  encounter questions that will help you understand key parts of Python
+  programming. Let's get started!
+
+
+  ## Setting Up
+
+
+  1. **Importing the Turtle Module**  
+     Begin by importing the Turtle module. What is the purpose of the `import` statement in Python?
+
+     ```python
+     import turtle
+     ```
+
+  2. **Creating a Turtle Object**  
+     Create a Turtle object named `snowflake`. What does the `turtle.Turtle()` function do?
+
+     ```python
+     snowflake = turtle.Turtle()
+     ```
+
+  3. **Setting the Background**  
+     Set the background color to a wintery blue. How do you change the background color in Turtle?
+
+     ```python
+     turtle.bgcolor("light blue")
+     ```
+
+  ## Drawing a Snowflake
+
+
+  1. **Defining a Function**  
+     Define a function named `draw_snowflake` that takes a Turtle object as a parameter. Why is it useful to use functions in your code?
+
+     ```python
+     def draw_snowflake(t):
+     ```
+
+  2. **Drawing a Single Branch**  
+     Inside the function, use a loop to draw a single branch of the snowflake. How does a `for` loop work in Python?
+
+     ```python
+     for _ in range(6):
+         t.forward(100)
+         t.backward(100)
+         t.right(60)
+     ```
+
+  3. **Creating the Full Snowflake**  
+     Call the `draw_snowflake` function to draw the complete snowflake. How do you call a function in Python?
+
+     ```python
+     draw_snowflake(snowflake)
+     ```
+
+  ## Enhancing the Landscape
+
+
+  1. **Positioning the Turtle**  
+     Use the `penup()` and `pendown()` methods to move the Turtle without drawing. What is the difference between `penup()` and `pendown()`?
+
+     ```python
+     snowflake.penup()
+     snowflake.goto(-150, 0)
+     snowflake.pendown()
+     ```
+
+  2. **Drawing Multiple Snowflakes**  
+     Use a loop to draw multiple snowflakes at different positions. How can loops help in reducing repetitive code?
+
+     ```python
+     for _ in range(3):
+         draw_snowflake(snowflake)
+         snowflake.penup()
+         snowflake.forward(150)
+         snowflake.pendown()
+     ```
+
+  ## Conclusion
+
+
+  Congratulations! You've created a beautiful landscape of snowflakes using
+  Python Turtle. Reflect on the questions and try experimenting with different
+  colors and sizes to make your snowflakes unique. What other shapes can you
+  create using similar techniques?
